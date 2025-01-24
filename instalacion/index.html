@@ -16,7 +16,7 @@
     
     
       
-        <title>Instalacion - COMFENALCO</title>
+        <title>Instalacion - GEAM</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalacion-y-configuracion-del-entorno-para-el-proyecto-comfenalco" class="md-skip">
+        <a href="#instalacion-y-configuracion-del-entorno-para-el-proyecto-geam" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -84,7 +84,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="COMFENALCO" class="md-header__button md-logo" aria-label="COMFENALCO" data-md-component="logo">
+    <a href=".." title="GEAM" class="md-header__button md-logo" aria-label="GEAM" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            COMFENALCO
+            GEAM
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -179,13 +179,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="COMFENALCO" class="md-nav__button md-logo" aria-label="COMFENALCO" data-md-component="logo">
+    <a href=".." title="GEAM" class="md-nav__button md-logo" aria-label="GEAM" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    COMFENALCO
+    GEAM
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -202,6 +202,26 @@
   
   <span class="md-ellipsis">
     INTRODUCCIÓN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scraping_prom_tgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PROMIGAS TGI
   </span>
   
 
@@ -447,14 +467,14 @@
 
 
 <!-- markdownlint-disable -->
-<h1 id="instalacion-y-configuracion-del-entorno-para-el-proyecto-comfenalco">Instalación y Configuración del Entorno para el Proyecto Comfenalco<a class="headerlink" href="#instalacion-y-configuracion-del-entorno-para-el-proyecto-comfenalco" title="Permanent link">&para;</a></h1>
-<p>Este apartado detalla los pasos necesarios para configurar un entorno funcional que permita la implementación y ejecución de los procesos de carga, transformación y análisis de datos utilizados en el proyecto de Comfenalco. El objetivo principal es garantizar una instalación uniforme de herramientas y dependencias, configurar correctamente las conexiones a las bases de datos y estructurar el entorno para el óptimo funcionamiento del Data Warehouse (DWH).</p>
+<h1 id="instalacion-y-configuracion-del-entorno-para-el-proyecto-geam">Instalación y Configuración del Entorno para el Proyecto GEAM<a class="headerlink" href="#instalacion-y-configuracion-del-entorno-para-el-proyecto-geam" title="Permanent link">&para;</a></h1>
+<p>Este apartado detalla los pasos necesarios para configurar un entorno funcional que permita la implementación y ejecución de los procesos de carga, transformación y análisis de datos utilizados en el proyecto de GEAM. El objetivo principal es garantizar una instalación uniforme de herramientas y dependencias, configurar correctamente las conexiones a las bases de datos y estructurar el entorno para el óptimo funcionamiento del Data Warehouse (DWH).</p>
 <hr />
 <h2 id="pasos-para-la-configuracion-del-entorno">Pasos para la Configuración del Entorno<a class="headerlink" href="#pasos-para-la-configuracion-del-entorno" title="Permanent link">&para;</a></h2>
 <h3 id="1-instalacion-de-herramientas-necesarias">1. <strong>Instalación de Herramientas Necesarias</strong><a class="headerlink" href="#1-instalacion-de-herramientas-necesarias" title="Permanent link">&para;</a></h3>
 <h4 id="versionamiento-de-herramientas">Versionamiento de Herramientas<a class="headerlink" href="#versionamiento-de-herramientas" title="Permanent link">&para;</a></h4>
-<p>Los paquetes ETL del proyecto Comfenalco se desarrollaron originalmente utilizando Visual Studio Community 2022, según las definiciones establecidas en la fase 1 del proyecto. Posteriormente, en la entrega del proyecto, Comfenalco degrada a la versión Visual Studio Professional 2019 para garantizar compatibilidad con los estándares de la organización.</p>
-<p>Entre el 14 y el 17 de enero de 2025, se llevaron a cabo mesas de trabajo conjuntas con el equipo de Comfenalco. Durante estas sesiones, se validaron los paquetes y se realizó la migración al servidor de pruebas, asegurando el correcto funcionamiento en el entorno de la organización. </p>
+<p>Los paquetes ETL del proyecto GEAM se desarrollaron originalmente utilizando Visual Studio Community 2022, según las definiciones establecidas en la fase 1 del proyecto. Posteriormente, en la entrega del proyecto, GEAM degrada a la versión Visual Studio Professional 2019 para garantizar compatibilidad con los estándares de la organización.</p>
+<p>Entre el 14 y el 17 de enero de 2025, se llevaron a cabo mesas de trabajo conjuntas con el equipo de GEAM. Durante estas sesiones, se validaron los paquetes y se realizó la migración al servidor de pruebas, asegurando el correcto funcionamiento en el entorno de la organización. </p>
 <h4 id="11-sql-server-management-studio-ssms"><strong>1.1 SQL Server Management Studio (SSMS)</strong><a class="headerlink" href="#11-sql-server-management-studio-ssms" title="Permanent link">&para;</a></h4>
 <p><strong>Requisitos</strong>:</p>
 <ul>
@@ -464,7 +484,7 @@
 <h4 id="12-visual-studio"><strong>1.2 Visual Studio</strong><a class="headerlink" href="#12-visual-studio" title="Permanent link">&para;</a></h4>
 <p><strong>Versión</strong>:</p>
 <ul>
-<li>Comfenalco utiliza Visual Studio Profesional 2019 (paga).</li>
+<li>GEAM utiliza Visual Studio Profesional 2019 (paga).</li>
 <li>Para desarrollo, se utiliza Visual Studio Community 2022 (gratuita), versión 17.11.5.</li>
 <li>Disponible en el siguiente enlace: <a href="https://visualstudio.microsoft.com/es/vs/community/">Descargar Visual Studio Community</a>.</li>
 </ul>
@@ -488,14 +508,14 @@
 <h3 id="2-creacion-del-entorno-virtual">2. <strong>Creación del Entorno Virtual</strong><a class="headerlink" href="#2-creacion-del-entorno-virtual" title="Permanent link">&para;</a></h3>
 <p>Un entorno virtual permite organizar y aislar las dependencias necesarias para este proyecto. Siga estos pasos:</p>
 <p><strong>1. Cree un entorno virtual ejecutando el siguiente comando:</strong></p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>comfenalco_env
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>GEAM_env
 </code></pre></div>
 <p><strong>2. Active el entorno virtual:</strong></p>
 <p><strong>En Windows</strong>:</p>
-<div class="highlight"><pre><span></span><code>comfenalco_env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+<div class="highlight"><pre><span></span><code>GEAM_env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
 </code></pre></div>
 <p><strong>En Linux/macOS</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>comfenalco_env/bin/activate
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>GEAM_env/bin/activate
 </code></pre></div>
 <h3 id="3-instalacion-de-dependencias">3. <strong>Instalación de Dependencias</strong><a class="headerlink" href="#3-instalacion-de-dependencias" title="Permanent link">&para;</a></h3>
 <p>Una vez activado el entorno virtual, instale las librerías necesarias:</p>
@@ -508,7 +528,7 @@
 <ul>
 <li>Use el administrador de conexiones ADO.NET.</li>
 <li>Cree las siguientes conexiones:<ul>
-<li><code>DWH_COMFENALCO</code></li>
+<li><code>DWH_GEAM</code></li>
 <li><code>STAGE_AREA</code></li>
 <li><code>SAP_ERP</code></li>
 </ul>
@@ -517,7 +537,7 @@
 </ul>
 <p><strong>2. Configuración Local</strong>:</p>
 <ul>
-<li>Cree una base de datos local en SQL Server Management Studio llamada <code>DWH_COMFENALCO_local</code> para realizar pruebas.</li>
+<li>Cree una base de datos local en SQL Server Management Studio llamada <code>DWH_GEAM_local</code> para realizar pruebas.</li>
 <li>Cree una conexión a esta base local.</li>
 </ul>
 <p><strong>3. Parametrización de Conexiones</strong>:</p>
@@ -606,7 +626,7 @@
 <span class="n">logger</span> <span class="o">=</span> <span class="n">setup_logger</span><span class="p">(</span><span class="n">log_filename</span><span class="o">=</span><span class="s1">&#39;etl_proceso.log&#39;</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
 
 <span class="c1"># Conectar a la base de datos</span>
-<span class="n">cadena_conexion</span> <span class="o">=</span> <span class="n">obtener_conexion</span><span class="p">(</span><span class="s1">&#39;dwh_comfenalco&#39;</span><span class="p">)</span>
+<span class="n">cadena_conexion</span> <span class="o">=</span> <span class="n">obtener_conexion</span><span class="p">(</span><span class="s1">&#39;dwh_GEAM&#39;</span><span class="p">)</span>
 <span class="n">motor</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="n">cadena_conexion</span><span class="p">)</span>
 
 <span class="c1"># Leer datos de origen</span>
@@ -620,7 +640,7 @@
 </code></pre></div>
 <hr />
 <h2 id="conclusion">Conclusión<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
-<p>Con estos pasos, el entorno estará listo para manejar los procesos ETL del proyecto Comfenalco. Al seguir este flujo, se asegura una configuración consistente, se minimizan errores y se facilita la integración de nuevos módulos o expansiones del DWH.</p>
+<p>Con estos pasos, el entorno estará listo para manejar los procesos ETL del proyecto GEAM. Al seguir este flujo, se asegura una configuración consistente, se minimizan errores y se facilita la integración de nuevos módulos o expansiones del DWH.</p>
 
 
 

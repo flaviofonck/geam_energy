@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../scraping_prom_tgi/">
       
       
         <link rel="next" href="../despachp_nal/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PRECIO BOLSA HORARIO - COMFENALCO</title>
+        <title>PRECIO BOLSA HORARIO - GEAM</title>
       
     
     
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="COMFENALCO" class="md-header__button md-logo" aria-label="COMFENALCO" data-md-component="logo">
+    <a href=".." title="GEAM" class="md-header__button md-logo" aria-label="GEAM" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            COMFENALCO
+            GEAM
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -183,13 +183,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="COMFENALCO" class="md-nav__button md-logo" aria-label="COMFENALCO" data-md-component="logo">
+    <a href=".." title="GEAM" class="md-nav__button md-logo" aria-label="GEAM" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    COMFENALCO
+    GEAM
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -206,6 +206,26 @@
   
   <span class="md-ellipsis">
     INTRODUCCIÓN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scraping_prom_tgi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PROMIGAS TGI
   </span>
   
 
@@ -556,7 +576,31 @@
 <li>Este enfoque asegura la resiliencia y fiabilidad del proceso.</li>
 </ul>
 </li>
+<li>
+<p><strong>Notificación por Correo Electrónico:</strong></p>
+<ul>
+<li>El sistema envía un correo electrónico al equipo de operaciones con los resultados del análisis en tiempo real.</li>
+<li>El correo incluye la gráfica del costo marginal y el reporte narrativo generado.</li>
+<li>
+<p>Configuración del correo:
+  <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">smtplib</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">email.mime.multipart</span><span class="w"> </span><span class="kn">import</span> <span class="n">MIMEMultipart</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">email.mime.text</span><span class="w"> </span><span class="kn">import</span> <span class="n">MIMEText</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">email.mime.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">MIMEBase</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">email</span><span class="w"> </span><span class="kn">import</span> <span class="n">encoders</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">enviar_correo</span><span class="p">(</span><span class="n">destinatario</span><span class="p">,</span> <span class="n">asunto</span><span class="p">,</span> <span class="n">cuerpo</span><span class="p">,</span> <span class="n">archivo_adjunto</span><span class="p">):</span>
+          <span class="n">remitente</span> <span class="o">=</span> <span class="s2">&quot;tu_correo@example.com&quot;</span>
+          <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;tu_contraseña&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Ejemplo:</p>
+</li>
+</ul>
+</li>
 </ol>
+<p><img alt="alt text" src="../images/correo_precio.jpg" width="50%" /></p>
 <hr />
 <h4 id="importancia-operativa">Importancia Operativa<a class="headerlink" href="#importancia-operativa" title="Permanent link">&para;</a></h4>
 <p>Este sistema es esencial para la operación eficiente y confiable del mercado eléctrico, ya que proporciona:</p>
