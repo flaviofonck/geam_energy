@@ -13,10 +13,6 @@
     width: 250px; /* Ajuste de ancho para la barra lateral izquierda */
 }
 
-.md-sidebar--secondary {
-    width: 180px; /* Ajuste de ancho para la barra lateral derecha */
-}
-
 /* Ajusta la barra de navegación superior para alinearse al nuevo ancho */
 .md-header {
     padding-left: 180px;  /* Alineación basada en la barra lateral izquierda */
@@ -58,18 +54,6 @@ h3.section-title {
 
 /* --- Ajustes de la Barra Lateral Derecha --- */
 
-/* Asegura que el título en la barra lateral derecha esté visible */
-.md-sidebar--secondary .md-nav__title {
-    color: #2A52BE; /* Azul medio */
-    font-weight: bold;
-    text-transform: uppercase;
-    display: block; /* Asegura que el título se muestre */
-}
-
-/* Elimina el contenido duplicado de "Tabla de contenidos" */
-.md-sidebar--secondary .md-nav__title span {
-    display: none;
-}
 
 /* Color azul medio para los enlaces en la barra lateral derecha */
 .md-sidebar-secondary .md-nav__link,
@@ -256,14 +240,11 @@ tr:hover {
     font-size: 0.85em; /* Ajusta este valor según el tamaño deseado */
 }
 
-/* Reducir el tamaño de la fuente en la barra lateral derecha (Tabla de contenido) */
-.md-sidebar--secondary .md-nav__link {
-    font-size: 0.8em; /* Ajusta este valor según el tamaño deseado */
-}
+
 
 /* Reducir el tamaño de la fuente en el título de las barras laterales */
 .md-sidebar .md-nav__title,
-.md-sidebar--secondary .md-nav__title {
+.md-nav__title {
     font-size: 0.95em; /* Ajusta el tamaño del título */
 }
 
@@ -298,3 +279,12 @@ p, li {
     margin-bottom: 10px; /* Añade espacio entre párrafos y elementos de lista */
 }
 
+/* Ocultar la barra lateral derecha (Tabla de Contenidos) */
+.md-sidebar--secondary {
+    display: none; /* Oculta la barra lateral derecha */
+}
+
+/* Expandir el contenido para ocupar el espacio de la barra eliminada */
+.md-content {
+    max-width: 100%; /* Aprovecha todo el ancho disponible */
+}
